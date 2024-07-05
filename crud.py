@@ -159,8 +159,8 @@ async def demo_m2m(session: AsyncSession):
 
 async def main():
     async with db_helper.session_factory() as session:
+        await demo_m2m(session)
         # await main_relations()
-        
 
 
 if __name__ == "__main__":
